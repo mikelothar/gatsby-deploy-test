@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- node
+before_script:
+- chmod +x ./scripts/deploy.sh
+script:
+- npm run build
+after_success:
+- "./scripts/deploy.sh"
+env:
+  global:
+    secure: dc/LIMEKs/Dey35CobEFvnq45n+E4zeGSA1sJJjd62DCjLG2HhbABYaiZmwS8Vm7jy8AHJ/0nNChsG2E+w3m4Xs2J8Cx2jhLOv5COYXn7uFeSJVJI0DzLJSMQ6xNt3EKOHApZBfH9swL7HrtDFpJsxe1X60bBveAU6n/9Y8lCx419ivJRDNfV89PZ1HrdjMMM+FMGMaupDGSGntxha93b1NpHgw2KUOU68nYfJJn50NZQfOBa7SLlLB+TkbBmDirqxsVuSy9ewazi9j81udfxLiaXB2//BoNIiLhkw0iEI510G8q3itd4NPGARdWYrD6aCmAfzr6/HwxGRxq9kzUf0bixhDCI11IM/czxAbuoq9O12ROsRubdURMcf2j3Vl/iD+ufUrBJEYJBVsU3yEhbcAGDhzDPm0zyt8gN2rvEKIdXYh53o0n1H7aiTs2bYkaDZwP7I5BGRrqdbR2ZpdCP3YoFxnKoVT++9nI2qLtjzCC3C+nh9Ca227CVK7AaIY+ptZ1h4Nkede4SMpQ1rpjoJENmHm4w3ivcA/DFzBd6KhZs7Ry3dC/Qy+O5TjEVWqWdV0/+nVhDUVHEv4a5FS2frXJG1/sYLGv5GfPnEzlyrcvIA44XIZaOxEVasOGkHNc/mHEexNe0a/B9PVh2XeQb9lFGBAfuXIrifL3HGW1GqY=
